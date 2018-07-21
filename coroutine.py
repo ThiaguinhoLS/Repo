@@ -15,4 +15,3 @@ task.add_done_callback(lambda future: loop.stop())
 loop.run_forever()
 # Fecha o loop de eventos
 loop.close()
-
