@@ -36,7 +36,7 @@ def factory_singleton(_instance = Spam()):
 
 def test_factory_singleton():
 
-        'Testa se a factory retorna sempre a mesma instância'
+    'Testa se a factory retorna sempre a mesma instância'
 
 	assert factory_singleton() is factory_singleton()
 
@@ -64,8 +64,8 @@ def test_singleton_decorator():
 
 def main():
 	test_singleton_instance()
-        test_factory_singleton()
-        test_singleton_decorator()
+    test_factory_singleton()
+    test_singleton_decorator()
 
 if __name__ == '__main__':
 	main()
