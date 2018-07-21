@@ -1,5 +1,11 @@
 # -*- coding: utf-8 -*-
 
+'''
+
+    Implements design pattern singleton
+
+'''
+
 class Singleton(object):
 
 	'Classe que implementa o padrão de projeto Singleton'
