@@ -2,7 +2,7 @@
 
 '''
 
-    Implements design pattern singleton
+    Implements design pattern singleton using: inheritance, decorators.
 
 '''
 
