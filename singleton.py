@@ -1,8 +1,9 @@
+#!usr/bin/python3
 # -*- coding: utf-8 -*-
 
 '''
 
-    Implements design pattern singleton using: inheritance, decorators.
+    Implementação de design pattern singleton utilizando: metacaclasse, herança, decoradores.
 
 '''
 
@@ -11,13 +12,13 @@ class Singleton(object):
     'Classe que implementa o padrão de projeto Singleton'
 
     def __new__(klass, *args, **kwargs):
-	if not hasattr(klass, '_instance'):
-	    klass._instance = object.__new__(klass)
-	    klass._instance._init(*args, **kwargs)
-	return klass._instance
+        if not hasattr(klass, '_instance'):
+            klass._instance = object.__new__(klass)
+            klass._instance._init(*args, **kwargs)
+        return klass._instance
 
     def _init(self, *args, **kwargs):
-	raise NotImplementedError()
+        raise NotImplementedError()
 
 
 
@@ -30,7 +31,7 @@ def test_singleton_instance():
     'Classe que implementa o método _init que inicializa instância'
 
         def _init(self, value = None):
-	    self.value = value
+            self.value = value
 
     assert Spam(1) is Spam(2)
 
@@ -59,7 +60,7 @@ class Singleton(object):
 
 
 def test_singleton_decorator():
-    
+
     @Singleton
     class Spam(object):
 
@@ -74,6 +75,4 @@ def main():
     test_singleton_decorator()
 
 if __name__ == '__main__':
-	main()
-
-
+    main()

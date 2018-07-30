@@ -1,5 +1,7 @@
+#!usr/bin/python3
 # -*- coding: utf-8 -*-
 import asyncio
+
 
 async def coroutine(value):
     await asyncio.sleep(1)

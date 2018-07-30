@@ -4,12 +4,16 @@
 from collections import namedtuple
 
 
-class Immutablei(namedtuple('Immutable', ['a', 'b'])):
+class Immutable(namedtuple('Immutable', ['a', 'b'])):
+
+    'Implementação de classe imutável extendendo namedtuple'
 
     __slots__ = ()
 
 
 class Immutable(tuple):
+
+    'Implementação de classe imutável utilizando como superclasse tuple'
 
     def __new__(cls, a, b):
         return tuple.__new__(cls, (a, b))

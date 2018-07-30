@@ -1,4 +1,6 @@
+#!usr/bin/python3
 # -*- coding: utf-8 -*-
+
 
 class Meta(type):
 
@@ -8,7 +10,6 @@ class Meta(type):
         return klass
 
 
-class Spam(metaclass = Meta):
+class Spam(metaclass=Meta):
 
     pass
-
