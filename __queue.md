@@ -1,33 +1,33 @@
 ## Módulo queue do Python ##
 
-### queue.Queue(maxsize=0) ###
+_### queue.Queue(maxsize=0) ###_
 
 Se `maxsize=0` a queue terá tamanho infinito, e o `queue.Queue.full()` sempre retornára `False`.
 
-### queue.Queue.empty() ###
+_### queue.Queue.empty() ###_
 
 Retorna True caso a queue esteja vazia.
 
-### queue.Queue.maxsize ###
+_### queue.Queue.maxsize ###_
 
 Retorna o tamanho máximo da queue.
 
-### queue.Queue.full() ###
+_### queue.Queue.full() ###_
 
 Retorna True se a queue estiver com seu tamanho máximo.
 
-### queue.Queue.put(item, block=True, timeout=None) ###
+_### queue.Queue.put(item, block=True, timeout=None) ###_
 
 Insere o item ao final da queue. Se `block=True` e timeout=None bloqueia até que um slot esteja disponível dentro 
 desse limite de tempo e aumentará `queue.Full` caso o tempo limite acabe. Se `block=False` insere o item imediamente 
 e aumentará `queue.Full` caso não possua slots livres.
 
-### queue.Queue.get(block=True, timeout=None) ###
+_### queue.Queue.get(block=True, timeout=None) ###_
 
 Retorna o primeiro item da queue. Se não houver um item na queue bloqueia se necessário se `block=True` até que um 
 item esteja disponível ou que `timeout` aumente queue.Empty.
 
-### queue.Queue.task_done() ###
+_### queue.Queue.task_done() ###_
 
 Indica que a tarefa anteriormente enfileirada está concluída. Aumentará ValueError se chamando mais vezes do que o
 tamanho da queue.
