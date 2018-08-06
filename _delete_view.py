@@ -11,7 +11,6 @@ class Author(models.Model):
     age = models.PositiveSmallIntegerField(verbose_name='idade', blank=True)
 
 
-
 # views.py
 
 from django.views.generic.edit import DeleteView

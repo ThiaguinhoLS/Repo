@@ -10,7 +10,6 @@ class Article(models.Model):
     name = models.CharField(verbose_name='nome', max_length=30)
     slug = models.SlugField()
 
-
 # views.py
 
 from django.views.generic.detail import DetailView
